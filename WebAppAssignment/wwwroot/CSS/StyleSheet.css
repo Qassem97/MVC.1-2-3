@@ -1,0 +1,11 @@
+﻿body {
+ background-color:burlywood;
+}
+ul > li > a {
+    margin-right:15px;
+}
+#about{
+    font-family:fantasy;
+    font-size:medium;
+    color:chartreuse;
+}

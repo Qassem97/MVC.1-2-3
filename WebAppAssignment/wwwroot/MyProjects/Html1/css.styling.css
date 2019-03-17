@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif, 'Times New Roman', Times;
+  /* another font in case */
+  font-size: 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: left;
+}
+
+nav>ul>li {
+  padding: 20px;
+  list-style-type: none;
+  float: left;
+}
+
+nav>ul>li>a {
+  color: beige;
+  background-color: rgb(52, 56, 44);
+}
+
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box1 {
+  background-color: brown;
+  padding-right: 2px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.box1>h1 {
+  float: left;
+}
+
+.box1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.article-box2 {
+  width: 70%;
+  float: left;
+}
+
+.article-box2>article {
+  float: left;
+  width: 40%;
+  margin-right: 9px;
+}
+
+.aside-box3 {
+  width: 30%;
+  float: left;
+}
+
+.bottom-box4 {
+  color: brown;
+  padding: 30px;
+  clear: both;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-fantasyFont {
+  font-weight: bold;
+  color: blue;
+}
+
+aside > ul > li{
+  color: green;
+}
+aside > ul > li > ol{
+  color: red;
+}

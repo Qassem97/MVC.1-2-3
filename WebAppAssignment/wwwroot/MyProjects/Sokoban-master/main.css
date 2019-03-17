@@ -1,0 +1,43 @@
+body{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.row {
+    display: flex;
+}
+.col {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-color: lightsalmon;
+}
+div.P {
+    background-image: url("images/ground.gif");
+}
+div.B {
+    background-image: url('./images/box.gif');
+}
+div.B.G {
+    background: green;
+}
+.W {
+    background-image: url("images/wall.gif");
+}
+.G {
+    background-image: url("images/goal.gif");
+}
+#win {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 100px;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.52);
+}

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="~/Images/iconIM.png" width="35" height="34" /> Qassem Profile
+            </a>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        @Html.ActionLink("Home", "")
+
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("About", "About", "")
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="Contact"> Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a asp-action="Projects"> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="FeverCheck">Fever Check</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Guessing" asp-action="Index">Guess Check</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p> &copy;Qassem Aburas @DateTime.Now.ToString("yyyy")</p>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "FeverCheck";
+}
+
+<h1>FeverCheck</h1>
+
+<form asp-controller="Home" asp-action="FeverCheck" method="post">
+    <input name="Temperature" type="text" placeholder="Temp." />
+    <button>Check</button>
+</form>
+
+@if (ViewBag.Diagnose != null)   //use
+    {
+        <h3>Result</h3>
+        <p>@ViewBag.Diagnose</p>
+    }

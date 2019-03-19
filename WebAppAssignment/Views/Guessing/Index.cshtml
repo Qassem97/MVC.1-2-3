@@ -1,12 +1,14 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
+    Layout = "_Layout";
 }
 
 <h1>The Guessing Game</h1>
 <h4>Try to figure out the right number!</h4>
 
-<h2>@ViewBag.message</h2>
+
+<h2>@TempData["message"]</h2>
 <form method="post">
     <input type="text" name="guess" />
     <button type="submit">Guess</button>

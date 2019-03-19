@@ -22,7 +22,6 @@ namespace WebAppAssignment.Controllers
         public IActionResult Index()
         {
             int answer = randNumGenerator.Next(1, 100);
-
             HttpContext.Session.SetInt32("answer", answer);
             ViewBag.test = HttpContext.Session.GetInt32("answer");
             return View();
@@ -35,17 +34,19 @@ namespace WebAppAssignment.Controllers
 
             if (int.Parse(guess) > answer)
             {
-                ViewBag.message = "Too high, try with a lower number!";
+                TempData["message"] = "Too high, try with a lower number!";
+                
             }
             else if (int.Parse(guess) < answer)
             {
-                ViewBag.message = "Too low, try with a higher number!";
+                TempData["message"] = "Too low, try with a higher number!";
             }
             else
             {
-                ViewBag.message = "A winner, well done! ";
+                
+                TempData["message"] = "A winner, well done!   Play again smart guy";
                 //play again?
-                //return RedirectToAction("Index");
+                return RedirectToAction("Index");
             }
             return View();
         }

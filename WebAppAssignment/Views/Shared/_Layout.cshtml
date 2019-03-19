@@ -22,14 +22,14 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        @Html.ActionLink("Home", "")
-
+                        @Html.ActionLink("Home", "Index", "Home") @*1- controller 2-action 3-rout *@
+                        
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("About", "About", "")
+                        @Html.ActionLink("About", "About", "Home") @*1- controller 2-action 3-rout *@
                     </li>
                     <li class="nav-item">
-                        <a asp-controller="Home"  asp-action="Contact"> Contact</a>
+                        <a asp-controller="Home" asp-action="Contact"> Contact</a>
                     </li>
 
                     <li class="nav-item">

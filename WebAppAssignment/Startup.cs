@@ -55,7 +55,7 @@ namespace WebAppAssignment
                 routes.MapRoute(
                  name: "Guessing",
                  template: "GuessingGameTemplate",//url
-                 defaults: new { controller = "Index", action = "Guessing Game" });
+                 defaults: new { controller = "Index", action = "Index" });
                 //////////
 
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");

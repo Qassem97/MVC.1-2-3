@@ -29,14 +29,14 @@
                         @Html.ActionLink("About", "About", "")
                     </li>
                     <li class="nav-item">
-                        <a asp-action="Contact"> Contact</a>
+                        <a asp-controller="Home"  asp-action="Contact"> Contact</a>
                     </li>
 
                     <li class="nav-item">
-                        <a asp-action="Projects"> Projects</a>
+                        <a asp-controller="Home" asp-action="Projects"> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a asp-action="FeverCheck">Fever Check</a>
+                        <a asp-controller="Home" asp-action="FeverCheck">Fever Check</a>
                     </li>
                     <li class="nav-item">
                         <a asp-controller="Guessing" asp-action="Index">Guessing Game</a>

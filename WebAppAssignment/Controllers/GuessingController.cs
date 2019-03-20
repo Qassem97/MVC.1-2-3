@@ -31,7 +31,6 @@ namespace WebAppAssignment.Controllers
         public IActionResult Index(string guess)
         {
             var answer = (int)HttpContext.Session.GetInt32("answer");
-
             if (int.Parse(guess) > answer)
             {
                 TempData["message"] = "Too high, try with a lower number!";

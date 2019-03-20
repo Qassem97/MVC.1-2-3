@@ -53,8 +53,5 @@ namespace WebAppAssignment.Controllers
             ViewBag.Diagnose = TempIs.FeverCheck(numTemperature);
             return View();
         }
-
-
-
     }
 }
